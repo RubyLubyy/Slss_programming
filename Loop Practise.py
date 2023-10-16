@@ -37,3 +37,19 @@ for items in countdown:
     print("---")
     time.sleep(1)
 
+
+# 1. Print all even numbers between 
+#    1200 and 1500 inclusive.
+#    Use a for loop.
+
+for i in range(1200, 1501, 2):
+    print(i)
+
+# 2. Print all odd numbers between
+#    -150 and 0 inclusive.
+
+for i in range(-149, -1, 2):
+    print(i)
+
+# Once you have your solution,
+# copy and paste your answer in #i-made-this

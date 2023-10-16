@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Natural Language Processing.md",
+                "file": "Conditionals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Natural Language Processing.md",
+                "file": "Conditionals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Natural Language Processing.md"
+                "file": "Conditionals.md"
               }
             }
           },
@@ -205,15 +205,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "86d397e155956c94",
+  "active": "441d0554a8232cf6",
   "lastOpenFiles": [
+    "Natural Language Processing.md",
     "Food Suggestion.py",
     "Loop Practise.py",
     "Food suggestion.py",
     "food suggestion.py",
     "Conditionals.md",
     "Boolean.md",
-    "Natural Language Processing.md",
     "Markdown Introduction.md",
     "warmup_1.py",
     "Chatbot.py",

@@ -154,3 +154,10 @@ else:
 	print("You must be some sort of robot.")
 ```
 
+
+# Range (<number>)
+`range( )` is a function that gives you a sequence of numbers starting at 0 by a default. By default it also goes up by 1. It stops right before the number that we provide as input. 
+
+```python
+range
+```
