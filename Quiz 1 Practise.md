@@ -9,7 +9,7 @@ Ruby Tang
 5. B
 6. C
 7. C
-8. A
+8. B
 9. C
 10. C
 11. Removed
