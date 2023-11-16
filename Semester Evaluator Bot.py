@@ -2,28 +2,23 @@
 # Auhtor : Ruby
 # Date : 6th Nov, 2023
 
-# Ask how many courses is the user taking
-print ("How many course are you taking?")
-num_course = input()
-
-# Number of questions = Number in input
-for i in range(1,num_course):
-    course_rating = float(input(f"How would you rate course {print(i)} out of 5? "))
+# Greet and ask for the number of courses
+num_courses = int(input("How many courses are you taking this semester? "))
+# Initialize total rating and course count
+total_rating = 0
+course_count = 0
+# Ask for the rating for each course
+for i in range(1, num_courses + 1):
+    course_rating = (input(f"How would you rate course {i} out of 5? "))
 for question in course_rating:
     print(question)
-    # Check if the rating is within a valid range
-    if 0 <= course_rating <= 5:
-        total_rating += course_rating
-        num_course += 1
-    else:
-        print("Invalid rating. Please enter a rating between 0 and 5.")
-
 
 
 # Calculate the average rating
-if num_course > 0:
-    average_rating = total_rating / num_course
-    print(f"Your average rating for {num_course} courses is: {average_rating:.2f}")
+if num_courses > 0:
+    course_rating = float(input().strip(",.?! "))
+    average_rating = course_rating / num_courses
+    print(f"Your average rating for {num_courses} courses is: {average_rating:.2f}")
 else:
     print("No valid courses rated. Unable to calculate average.")
 
