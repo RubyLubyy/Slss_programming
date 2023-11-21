@@ -56,7 +56,12 @@ with open("./data_example.csv", encoding="utf-8") as f:
 # see if why your code doesn't work.
 # Else, you can move on to this part, which is, find out how many
 # people have the first letter of their first name start with "A".
+with open("./data_example.csv", encoding="utf-8") as f:
+    for line in f:
+        current_line = line.strip().split(",")
+        print(current_line[1])
 
+        
 # Problem 6:
 # 19 people! Excellent. How many people come from Guangzhou?
 
