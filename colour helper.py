@@ -17,8 +17,10 @@ def pixel_to_name(pixel: tuple) -> str:
         return "jelly bean blue"
     else:
         return "colour unknown"
+
 print(pixel_to_name((180, 3, 2)))
 print(pixel_to_name((70, 77, 194)))
+
 def is_light(pixel: tuple) -> bool:
     """Returns True if the pixel is a "light" pixel
     Params:
@@ -35,11 +37,13 @@ def is_light(pixel: tuple) -> bool:
         return True
     else:
         return False
+
 def pixel_to_grayscale(pixel: tuple) -> tuple:
     """Return a gray version of the given pixel"""
     red, green, blue = pixel
     gray = int(red * 0.3 + green * 0.59 + blue * 0.11)
     return (gray, gray, gray)
+
 def pixel_to_random_effect(pixel: tuple) -> tuple:
     """Return a random pixel"""
     red, green, blue = pixel
