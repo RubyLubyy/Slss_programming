@@ -1,4 +1,5 @@
 # Colour Helper
+# Ruby 
 
 # Functions that help wither colours
 def pixel_to_name(pixel: tuple) -> str:
@@ -10,17 +11,11 @@ def pixel_to_name(pixel: tuple) -> str:
         name of the colour
     """
     red, green, blue = pixel
-    # TODO: detect jelly bean blue
-    if red > 170 and green < 60 and blue < 60:
+    if red > 195 and green < 90 and blue < 90:
         return "red"
-    elif red < 120 and green < 130 and blue > 90:
-        return "jelly bean blue"
     else:
         return "colour unknown"
-
 print(pixel_to_name((180, 3, 2)))
-print(pixel_to_name((70, 77, 194)))
-
 def is_light(pixel: tuple) -> bool:
     """Returns True if the pixel is a "light" pixel
     Params:
@@ -30,20 +25,11 @@ def is_light(pixel: tuple) -> bool:
         False if a dark pixel
     """
     red = pixel[0]
-    green = pixel[1]
-    blue = pixel[2]
-    average = (red + green + blue) / 3
-    if average >= 128:
-        return True
-    else:
-        return False
-
 def pixel_to_grayscale(pixel: tuple) -> tuple:
     """Return a gray version of the given pixel"""
     red, green, blue = pixel
     gray = int(red * 0.3 + green * 0.59 + blue * 0.11)
     return (gray, gray, gray)
-
 def pixel_to_random_effect(pixel: tuple) -> tuple:
     """Return a random pixel"""
     red, green, blue = pixel
