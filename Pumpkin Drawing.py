@@ -1,5 +1,5 @@
 # Pumpkin Drawing
-# Author:
+# Author: Ruby
 # Date: 31 October 2023
 import turtle
 import time
