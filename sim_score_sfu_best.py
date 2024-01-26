@@ -1,20 +1,12 @@
 # SFUs Best - Similarity Score
 # Author: Ruby
-# 10 November 2023
+# 10th November 2023
 
 # Load data from a file
 # "Read" it in a meaningful
 # Link our Sim Score algo to the data
 
-# Open the file
-with open("./data.csv") as f:
-    f.readline()
-
-    # The second line of the csv file
-    f.readline()
-
-# Create a "profile" of likes (fave places
-# in SFU)
+# Create a "profile" of likes (fave places in SFU)
 profile = [
     "Bubble World",
     "Chef Hung",
@@ -26,8 +18,8 @@ profile = [
 # Initialize top score and their name
 most_similar_score = 0
 most_similar_name = " "
-least_similar_score = 0
-least_similar_score = " "
+least_similar_score = float('inf')  # Initialize to positive infinity
+least_similar_name = " "
 
 with open("./data.csv") as f:
     # Throw away the header
@@ -35,10 +27,10 @@ with open("./data.csv") as f:
 
     for line in f:
         # Convert the string to a list
-        current_likes = line.split(",")
+        current_likes = line.strip().split(",")
 
         # Store the person's name
-        current_name = current_likes[1]
+        current_name = current_likes[0]  # Assuming the name is the first element
         
         # Initialize the current sim score
         current_sim_score = 0
@@ -56,7 +48,13 @@ with open("./data.csv") as f:
             most_similar_score = current_sim_score
             most_similar_name = current_name
 
-        if current_sim_score < least_similar_score
+        # Update the least similar person
+        if current_sim_score < least_similar_score:
+            least_similar_score = current_sim_score
+            least_similar_name = current_name
 
 print("🏅🏅🏅🏅 Most similar person! 🏅🏅🏅🏅")
 print(f"{most_similar_name} - Score: {most_similar_score}")
+
+print("👎👎👎 Least similar person! 👎👎👎")
+print(f"{least_similar_name} - Score: {least_similar_score}")
